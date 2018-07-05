@@ -60,9 +60,6 @@ location / {
 
 ## 引用された第三者資源
 
--------
-
-
 + [SB-Admin2](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2)
 + [ThinkPHP](https://thinkphp.cn)
 

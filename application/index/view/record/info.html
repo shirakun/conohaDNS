@@ -128,7 +128,7 @@
                                         <th>レコード</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="srk-record-list">
                                     {volist name="r_list.records" id="vo"} {neq name="vo.type" value="SOA"}
                                     <tr>
                                         <td class='record'>{:substr($vo['name'], 0, -1)}</td>
@@ -315,7 +315,8 @@
                 });
             });
 
-            $('.btn-domain-edit').click(function () {
+            $('#srk-record-list').on('click', '.btn-domain-edit', function () {
+                // $('.btn-domain-edit').on('click', function () {
                 $("#record-edit").modal();
                 $('#edit-record').attr('value', $(this).parent().parent().find('.record').html());
                 $('#edit-type').attr('value', $(this).parent().parent().find('.type').html());
@@ -391,7 +392,8 @@
 
             });
 
-            $('.btn-domain-delete').click(function () {
+            $('#srk-record-list').on('click', '.btn-domain-delete', function () {
+                // $('.btn-domain-delete').on('click', function () {
                 $.ajax({
                     url: '/index/record/delete',
                     async: false,

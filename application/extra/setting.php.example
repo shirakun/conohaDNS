@@ -1,0 +1,18 @@
+<?php
+return [
+    //サイト名
+    'webname' => 'このはDNS',
+
+    //管理パネルのアカウントとパスワード(このプログラム)
+    'admin'   => [
+        'user'     => 'admin',
+        'password' => '123456',
+    ],
+
+    //あなたのconohaのAPI情報
+    'conoha'  => [
+        'username'  => 'gncu12345678',
+        'password'  => 'abc123456.',
+        'tenant_id' => '1f3e81d64b40f6523d5a73152b86ff5e',
+    ],
+];

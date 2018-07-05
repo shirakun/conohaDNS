@@ -48,6 +48,15 @@ GREBをサポートしていない
 
 * Apacheのrewriteは`.htaccess`として保存され、通常は直接使用できます。
 
+* pathinfoがないまたは500エラーが出てい場合は
+
+~~~
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^(.*)$ index.php?s=$1 [QSA,PT,L]
+~~~
+
 > nginx
 
 ~~~

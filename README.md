@@ -2,8 +2,8 @@ conohaDNS
 
 ===============
 
-conohaDNSはconohaのapi通じて あなたのドメインを管理する
-conohaのDNS管理パネルが粗末だから、俺はこのプログラムを書きました。
+conohaDNSはconohaのapi通じて あなたのドメインを管理する\
+conohaのDNS管理パネルが粗末だから、俺はこのプログラムを書きました。\
 今は以下のタイプのレコードだけをサポートします
 + A
 + AAAA
